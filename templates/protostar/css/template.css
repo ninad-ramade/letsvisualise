@@ -7666,3 +7666,18 @@ li {
 .nav li a:hover{
 	color:#d01b08;
 }
+.item-105 a {
+    text-transform: uppercase;
+    border: 1px solid;
+    letter-spacing: 1px;
+}
+.logout{
+	float:right;
+}
+.login-greeting{
+	float:left;
+	color:white;
+}
+.header-search{
+	margin-right:10%;
+}

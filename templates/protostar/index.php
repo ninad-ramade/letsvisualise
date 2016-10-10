@@ -127,6 +127,13 @@ else
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<jdoc:include type="head" />
+	<?php if(JFactory::getUser()->id>0){ ?>
+		<style type="text/css">
+		.item-105{
+			display:none;
+		}
+		</style>
+	<?php } ?>
 	<!--[if lt IE 9]><script src="<?php echo JUri::root(true); ?>/media/jui/js/html5.js"></script><![endif]-->
 	<script type="text/javascript">
 	jQuery(document).ready(function(){
@@ -156,6 +163,9 @@ else
 							<?php echo '<div class="site-description">' . htmlspecialchars($this->params->get('sitedescription'), ENT_COMPAT, 'UTF-8') . '</div>'; ?>
 						<?php endif; ?>
 					</a>
+					<div class="logout">
+						<jdoc:include type="modules" name="position-12" style="none" />
+					</div>
 					<div class="header-search pull-right">
 						<jdoc:include type="modules" name="position-0" style="none" />
 					</div>
