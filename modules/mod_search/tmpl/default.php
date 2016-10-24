@@ -28,6 +28,15 @@ else
 <div class="search<?php echo $moduleclass_sfx ?>">
 	<form action="<?php echo JRoute::_('index.php');?>" method="post" class="form-inline">
 		<?php
+			$final_output = '<label for="mod-search-searchword" class="element-invisible">Search Author...</label> ';
+			$final_output .= '<input name="searchauthor" id="mod-search-searchword" maxlength="' . $maxlength . '"  class="inputbox search-query" type="search"' . $width;
+			$final_output .= ' placeholder="Search Author..." />';
+			$final_output .= '<label for="mod-search-searchword" class="element-invisible">Search Tags...</label> ';
+			$final_output .= '<input name="searchtags" id="mod-search-searchword" maxlength="' . $maxlength . '"  class="inputbox search-query" type="search"' . $width;
+			$final_output .= ' placeholder="Search Tags..." />';
+		
+		
+		
 			$output = '<label for="mod-search-searchword" class="element-invisible">' . $label . '</label> ';
 			$output .= '<input name="searchword" id="mod-search-searchword" maxlength="' . $maxlength . '"  class="inputbox search-query" type="search"' . $width;
 			$output .= ' placeholder="' . $text . '" />';
@@ -58,8 +67,8 @@ else
 						break;
 				endswitch;
 			endif;
-
-			echo $output;
+			$final_output.=$output;
+			echo $final_output;
 		?>
 		<input type="hidden" name="task" value="search" />
 		<input type="hidden" name="option" value="com_search" />

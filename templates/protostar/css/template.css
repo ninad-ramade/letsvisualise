@@ -7107,7 +7107,7 @@ body.site {
 	background-color: #f4f6f7;
 }
 body.site.fluid {
-	background-color: #eee;
+	background-color: white;
 }
 .thumbnail {
 	margin-bottom: 9px;
@@ -7143,7 +7143,7 @@ body.site.fluid {
 	padding: 5px 0;
 	border-top: 1px solid rgba(0,0,0,0.075);
 	border-bottom: 1px solid rgba(0,0,0,0.075);
-	background-color:white;
+	background-color:#eee;
 }
 .navigation .nav-pills {
 	margin-bottom: 0;
